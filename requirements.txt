@@ -7,3 +7,4 @@ djangorestframework==3.4.7
 requests==2.11.1
 six==1.10.0
 wsgiref==0.1.2
+jsmin==2.2.1
