@@ -1,0 +1,6 @@
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+	{{ field }}
+	{% if field.errors %}
+	<label class="control-label" for="inputError">{{ field.errors.0 }}</label>
+	{% endif %}
+</div>

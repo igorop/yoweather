@@ -1,0 +1,9 @@
+Django==1.9.9
+MySQL-python==1.2.5
+PyExecJS==1.4.0
+PyReact==0.6.0
+django-pipeline==1.6.9
+djangorestframework==3.4.7
+requests==2.11.1
+six==1.10.0
+wsgiref==0.1.2

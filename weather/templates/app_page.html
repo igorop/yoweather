@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+<div class="cover-container cover{{ cover }}">
+  <div class="dimmer"></div>
+</div>
+<div class="main-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <div id="example"></div>
+        <h1 id="logo">{{ SITE_NAME }}</h1>
+        <h2 id="slogan">{{ SITE_SLOGAN }}</h2>
+        <div id="form-container" data-source="{% url 'forcast' %}">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="weather-display">
+  </div>
+</div>
+{% endblock %}

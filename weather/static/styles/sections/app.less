@@ -1,0 +1,109 @@
+/* Application Less styling */
+
+#weather-display {
+
+	.display {
+		background: rgba(255, 255, 255, 0.2);
+		color: #fff;
+		margin: 20px 0;
+		padding: 20px;
+
+		h4 {
+			text-align: center;
+			font-weight: 200;
+			padding: 10px;
+		}
+
+		table {
+			td {
+				padding: 8px;
+				border-top: 0 !important;
+
+				img {
+					margin-top: -12px;
+				}
+			}
+		}
+
+		.data-container {
+			padding: 20px 0;
+			border-top: 1px solid #999;
+			margin-top: 20px;
+		}
+
+		.averages {
+			text-align: center;
+
+			> div {
+				display: inline-block;
+				width: 25%;
+				text-align: center;
+				padding: 0 5px;
+				.text-overflow();
+
+				> span {
+					font-weight: 200;
+					font-size: 20px;
+				}
+			}
+		}
+
+	}
+}
+
+.loader-container {
+	> .loader {
+		width: 30px;
+		height: 30px;
+		background-size: 100%;
+		background-image: url(../images/loader.gif);
+		margin: 20px auto;
+	}
+}
+
+.main-content {
+	padding-top: 50px;
+
+	@media (min-width: @screen-md-min) {
+		padding-top: 150px;
+	}
+}
+
+.dimmer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.55);
+}
+
+.cover-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+	&.cover1 {
+		background-image: url('../images/covers/cover1.jpg');
+	}
+	&.cover2 {
+		background-image: url('../images/covers/cover2.jpg');
+	}
+	&.cover3 {
+		background-image: url('../images/covers/cover3.jpg');
+	}
+	&.cover4 {
+		background-image: url('../images/covers/cover4.jpg');
+	}
+	&.cover5 {
+		background-image: url('../images/covers/cover5.jpg');
+	}
+	&.cover6 {
+		background-image: url('../images/covers/cover6.jpg');
+	}
+}

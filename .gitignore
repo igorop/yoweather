@@ -1,0 +1,10 @@
+weather/migrations/*
+.Python
+include/
+*.pyc
+env/
+.htpasswd
+log/
+wwwsite/settings/local.py
+wwwsite/settings/production.py
+wwwsite/wwwsite/
