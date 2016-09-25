@@ -181,7 +181,7 @@
 					<div className="form-group">
 						<select onChange={ this.handlePeriodChange } className="form-control transparent-control" id="id_period" name="period">
 							<option value="today">Today&#39;s forecast</option>
-							<option value="week">Five Day forecast</option>
+							<option value="week">Weekly forecast</option>
 						</select>
 					</div>
 					<button type="submit" className="btn btn-transparent">Show me the forecast</button>
