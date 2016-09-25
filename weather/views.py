@@ -33,9 +33,6 @@ def app_view(request, template_name='app_page.html'):
 @api_view(['GET'])
 @permission_classes((permissions.AllowAny,))
 def forcast_api(request):
-    """
-    List all snippets, or create a new snippet.
-    """
 
     serializer = ForecastSerializer(data=request.GET)
     if serializer.is_valid():
