@@ -81,7 +81,7 @@ class WeatherAPI:
 
 
 	def get_forecast(self, city,period="today",mode="json"):
-		""" Get a forcast for a city and a time period """
+		""" Get a forecast for a city and a time period """
 
 		if period not in self.PERIODS.keys():
 			raise UnknownPeriod(period)

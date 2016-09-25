@@ -22,7 +22,7 @@ from weather.views import *
 
 urlpatterns = [
     url(r'^$', app_view, name="app"),
-	url(r'^api/forecast/', forcast_api , name='forcast')
+	url(r'^api/forecast/', forecast_api , name='forecast')
 ]
 
 if settings.LOCAL_SETTINGS:
